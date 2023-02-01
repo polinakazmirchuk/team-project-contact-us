@@ -8,10 +8,9 @@
 }
 .whole-page {
   min-width: 375px;
-  min-height: 1171px;
   width: 375px;
-  height: 1171px;
   margin: 0 auto;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -22,7 +21,7 @@
 }
 
 .text {
-  margin-top: 106px;
+  margin-top: 36px;
   height: 131px;
   width: var(--width);
   display: inherit;
@@ -51,7 +50,7 @@
 .section-main {
   margin-top: 45px;
   width: var(--width);
-  height: 705px;
+  margin-bottom: 70px;
 }
 .map {
   overflow: hidden;
@@ -66,7 +65,7 @@
 }
 .registration-form {
   height: 481px;
-  width: var(--width);
+  width: 100%;
 }
 
 .registration-form__fields {
@@ -104,11 +103,96 @@
   margin-top: 21px;
 }
 
+@media (min-width: 768px) {
+  .whole-page {
+    width: 768px;
+    min-width: 768px;
+  }
+  .text {
+    width: 400px;
+  }
+
+  .text__contact-us {
+    font-size: 27px;
+    width: 130px;
+  }
+  .text__paragraph {
+    font-size: 22px;
+  }
+  .section-main {
+    width: 450px;
+  }
+
+  .map__iframe {
+    height: 260px;
+  }
+
+  .registration-form__fields {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .whole-page {
+    width: 1024px;
+    min-width: 1024px;
+  }
+  .text {
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+  }
+  .text__contact-us {
+    font-size: 35px;
+    width: 190px;
+  }
+  .text__paragraph {
+    margin-top: 28px;
+  }
+  .section-main {
+    width: 570px;
+  }
+
+  .map__iframe {
+    height: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .whole-page {
+    width: 1200px;
+    min-width: 1200px;
+  }
+  .text {
+    width: 600px;
+  }
+
+  .map__iframe {
+    width: 500px;
+    height: 100%;
+    margin-left: 50px;
+  }
+
+  .registration-form {
+    width: 500px;
+    height: 450px;
+  }
+  .section-main {
+    width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .registration-form__fields:nth-of-type(1) {
+    margin-top: 0;
+  }
+}
 @media (min-width: 1440px) {
   .whole-page {
     min-width: 1440px;
-    min-height: 949px;
-    height: 949px;
+    width: 1440px;
+    height: 100vh;
     padding: 0 130px 0 130px;
     flex-direction: column;
     align-items: center;
@@ -116,19 +200,21 @@
   }
   .text {
     width: 411px;
-    margin-top: 163px;
-    height: 126px;
+
+    height: 160px;
     justify-content: center;
   }
   .text__contact-us {
     font-size: 40px;
     line-height: 50px;
-    width: 187px;
+    width: 411px;
     height: 50px;
   }
   .text__paragraph {
     width: 411px;
     line-height: 35px;
+    margin-top: 16px;
+    font-size: 20px;
   }
   .section-main {
     margin-top: 67px;
@@ -137,6 +223,7 @@
     display: grid;
     grid-template: 1fr /575px 575px;
     gap: 30px;
+    margin-bottom: 90px;
   }
   .registration-form {
     height: 385px;
